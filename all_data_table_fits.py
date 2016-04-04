@@ -146,11 +146,12 @@ Wzs_HIPASS = Wz_HIPASS - 0.13*26.4
 Wt_HIPASS = 5.
 Wc_HIPASS = 100.
 
-for i in range(len(HIPASS_NAME)):
+#for i in range(len(HIPASS_NAME)):
 
-	if sin_i[i] == 0:
-		sin_i[i]=None
+#	if sin_i[i] == 0:
+#		sin_i[i]=None
 #		print HIPASS_NAME[i]
+sin_i=[None for j in sin_i if sin_i[j]==0]
 
 Wzst_HIPASS = np.sqrt(Wzs_HIPASS**2 + ((Wt_HIPASS**2)*(1.-2.*np.exp(-((Wzs_HIPASS/Wc_HIPASS)**2)))) - 2.*Wzs_HIPASS*Wt_HIPASS*(1. - np.exp(-((Wzs_HIPASS/Wc_HIPASS)**2))))
 
