@@ -1,5 +1,3 @@
-#Sinem
-
 import numpy as np
 import pyfits
 from astropy.io import fits
@@ -345,4 +343,5 @@ for m in range(len(HIPASS_NAME)):
 		culled_updated_line_width_errors[m] = err_width_HIPASS[m]
 
 #	print HIPASS_W50max[m], culled_updated_line_widths[m]
+## Mahsa added this line
 
